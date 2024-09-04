@@ -710,7 +710,7 @@ async function sendMessage(question, userTime) {
     const { aiResponse } = require('./New 2/scraper/ai'); 
     try {
         const combinedMessage = previousConversation + "\nUser: " + question;
-        const blackboxData = await aiResponse(combinedMessage, '');
+        const blackboxData = await aiResponse(question);
         displayAnswer(blackboxData, userTime);
         previousConversation += "\nUser: " + question + "\nAssistant: " + blackboxData;
 
