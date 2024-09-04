@@ -101,7 +101,7 @@ res.json(loghandler.apikey);
 }
 });
 
-router.get("/ai", async (req, res, next) => {
+router.get("/ai2", async (req, res, next) => {
 const { aiResponse } = require('../New 2/scraper/ai');
 var apikey = req.query.apikey;
 var q = req.query.q;
