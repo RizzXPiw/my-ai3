@@ -14,7 +14,6 @@ const listkey = global.apikey;
 
 const os = require('os');
 const { performance } = require('perf_hooks');
-const { color, bgcolor } = require("/color.js");
 
 _ = require("lodash");
 
