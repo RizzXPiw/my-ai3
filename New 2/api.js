@@ -14,10 +14,7 @@ const listkey = global.apikey;
 
 const os = require('os');
 const { performance } = require('perf_hooks');
-const { color, bgcolor } = require(__path + "/lib/color.js");
-const { fetchJson } = require(__path + "/lib/fetcher.js");
-const options = require(__path + "/lib/options.js");
-const { getBuffer } = require(__path + "/lib/functions.js");
+const { color, bgcolor } = require("/color.js");
 
 _ = require("lodash");
 
