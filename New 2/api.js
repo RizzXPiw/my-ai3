@@ -95,6 +95,7 @@ var q = req.query.q;
 const response = await aiResponse(question);
 if (!apikey) return res.json(loghandler.noapikey);
 if (listkey.includes(apikey)) {
+return res.json({
 status: true,
 creator: `${global.creator}`,
 result: response,
@@ -109,9 +110,7 @@ const { aiResponse } = require('../New 2/scraper/ai');
 var apikey = req.query.apikey;
 var q = req.query.q;
 var response;
-if (!apikey) {
-return res.json(loghandler.noapikey);
-}
+if (!apikey) return res.json(loghandler.noapikey);
 if (listkey.includes(apikey)) {
 try {
 response = await aiResponse(q); 
