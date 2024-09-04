@@ -1,5 +1,14 @@
 const fetch = require('node-fetch');
 
+const IDRandom = () => {
+const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+let password = '';
+for (let i = 0; i < 12; i++) {
+password += characters.charAt(Math.floor(Math.random() * characters.length));
+}
+return password;
+}
+
 async function aiResponse(text) {
     const headers = {
         "Accept": "*/*",
@@ -11,7 +20,7 @@ async function aiResponse(text) {
     };
 
     const data = {
-        messages: [{ id: m.sender, role: 'user', content: text }],
+        messages: [{ id: IDRandom(20), role: 'user', content: text }],
         agentMode: { mode: true, id: "RizzPiw365XA8z", name: "RizzPiw" },
         previewToken: null,
         userId: "",
