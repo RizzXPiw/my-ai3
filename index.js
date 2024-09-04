@@ -3,7 +3,7 @@ cors = require("cors"),
 secure = require("ssl-express-www");
 const PORT = process.env.PORT || 3000;
 var path = require("path");
-var { color } = require("./lib/color.js");
+var { color } = require("./color.js");
 
 var app = express();
 app.enable("trust proxy");
