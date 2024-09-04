@@ -1,20 +1,44 @@
 {
-  "name": "AI-RizzPiw",
+  "name": "Api-RizzPiw",
   "version": "2.0.0",
-  "description": "Rest api by RizzPiw",
+  "description": "AI By RizzPiw",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint:check": "eslint",
+    "lint:fix": "eslint New 2/*.html --fix"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeeone-ofc/api-mirip-zeks.git"
+  },
+  "keywords": [
+    "botwa",
+    "simple",
+    "api",
+    "rest",
+    "api",
+    "website"
+  ],
   "author": "RizzPiw",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeeone-ofc/api-mirip-zeks/issues"
+  },
   "dependencies": {
+    "@bochilteam/scraper": "^4.0.22-alpha.0",
     "axios": "^0.21.1",
+    "base-64": "^1.0.0",
+    "base32": "0.0.6",
+    "brainly-scraper-v2": "^1.1.2",
+    "caliph-api": "^1.0.0",
+    "cfonts": "^2.9.1",
     "chalk": "^4.1.0",
     "cheerio": "^1.0.0-rc.5",
     "cookie": "^0.5.0",
     "cors": "^2.8.5",
     "crypto": "^1.0.1",
+    "dandi-api": "^1.2.0",
     "express": "^4.17.1",
     "file-type": "^16.1.0",
     "fluent-ffmpeg": "^2.1.2",
@@ -30,4 +54,10 @@
     "ssl-express-www": "^3.0.7",
     "urlencode": "^1.1.0"
   },
+  "homepage": "https://github.com/zeeone-ofc/api-mirip-zeks#readme",
+  "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.17.1",
+    "@html-eslint/parser": "^0.17.1",
+    "eslint": "^8.36.0"
+  }
 }
