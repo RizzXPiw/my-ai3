@@ -88,9 +88,11 @@ router.get("/ai", async (req, res, next) => {
 const { aiResponse } = require('../New 2/scraper/ai')
 var apikey = req.query.apikey;
 var q = req.query.q;
+await sleep(2000)
 const response = await aiResponse(q);
 if (!apikey) return res.json(loghandler.noapikey);
 if (listkey.includes(apikey)) {
+await sleep(2000)
 return res.json({
 status: true,
 creator: `${global.creator}`,
@@ -109,7 +111,9 @@ var response;
 if (!apikey) return res.json(loghandler.noapikey);
 if (listkey.includes(apikey)) {
 try {
+await sleep(2000)
 response = await aiResponse(q); 
+await sleep(2000)
 return res.json({
 status: true,
 creator: `${global.creator}`,
