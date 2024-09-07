@@ -43,6 +43,10 @@ const sec = Math.floor(seconds % 60);
 return `${pad(hours)}:${pad(minutes)}:${pad(sec)}`;
 }
 
+const sleep = async (ms) => {
+  return new Promise(resolve => setTimeout(resolve, ms));
+};
+
 /** @note
  * Liat cara nulis code yang bener
  */
